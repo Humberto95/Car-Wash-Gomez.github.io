@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif, 'Times New Roman';
+    margin: 0;
+}
+button{
+       font-size: 1.5em;
+       font-weight: bold;
+       padding: 10px 20px;
+       border-radius: 10px;
+       border: 1px solid rgba(0, 0, 0, 0.5);
+       box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+       color: white;
+       background: silver;
+       cursor: pointer;
+       transition: background-position .3s ease;
+       background:linear-gradient(to right, silver 50%,white 50%) no-repeat left / 200% ;
+   }
+   button:hover{
+    background-position: right;
+    color: black;
+    font-size: 1.6em;
+ }
+
+ul{
+    list-style: none;
+}
+
+.container{
+    max-width: 1250px;
+    margin: auto;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.75) ;
+}
+
+header .name{
+    font-size: 2.5em;
+    font-family: 'Dancing Script';
+    color: white;
+    font-weight: bold;
+    padding: 25px 30px;
+    margin: 0;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 17px;
+    text-decoration:none;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2em;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 125vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+     ,url(img/fon.jpg);
+     background-position: center center;
+     background-repeat:no-repeat ;
+     background-size: cover;
+
+}
+
+#hero h1{
+    font-size: 5em;
+    color: white;
+}
+
+header a:hover{
+    color: greenyellow;
+}
+
+.text h2{
+    font-size: 4em;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(41, 121, 196);
+    margin: 18px;
+    border: solid 10px;
+
+
+}
+.text h3{
+    
+    padding: 15px 200px;
+    font-size: 2.3em;
+    color: rgb(122, 121, 121);
+
+}
+h2:hover{
+    color: greenyellow;
+    font-weight: bold;
+}
+ul h3{
+    color: gray;
+}
+
+#Mecanica li{
+    margin: 20px 0px;
+    color: rgb(33, 144, 196);
+    font-weight: bold;
+    font-size: 1.2em;
+    
+}
+#Mecanica ul{
+    margin-right: 220px;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+#Mecanica .container{
+    text-align: right;
+}
+ul .posicion{
+    text-align: right;
+}
+#Mecanica .container-Mec{ 
+    background-image: url(img/Mecani.png);
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: calc(100vw - 1320px);
+    padding: 90px 20px;
+}
+
+@media (min-width: 700px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+    #Lavado .container{
+        text-align: center top;
+    }
+    #Lavado ul{
+        margin-top: 0px;
+        
+    }
+    
+    
+   
+}
